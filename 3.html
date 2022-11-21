@@ -13,6 +13,7 @@
     </ul>
 
     <h2>Javascript</h2>
+    <p><img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" width="50%"></p>
     <p>부모 자식의 구분도 없으며, 메인 메소드 같은 것도 없고, 클래스-인스턴스 관계도 없으며, 모든 함수가 클래스도 될 수 있으며 인스턴스도 될 수 있다. 그렇기 때문에 모든 함수가 따로 놀기에 따라서 객체 지향처럼 "서로 맞물리는" 것을 기대할 수도 없다.(그런 이유로 클로저 개념이 있다.) 이 특성을 잘 이해해야 한다. 오히려 순서대로 읽는 절차 지향/객체 지향 언어보다는 모든 요소가 각자 따로 움직이는 스타크래프트 맵 에디터 스크립트에 더 가까운 개념으로 이해해야 한다. 로드는 순서대로지만 실행은 동시 실행이다. 그러니까 main()같은건 없고 필요할때 실행되고 사라지는 스크립트들의 집합이라고 보면 된다. 오히려 웹 페이지 자체가 main()이라고 봐야 할 지경.</p>
 
     <p>JavaScript는 C에서 영향을 받은 C-Family 언어로 기본적인 문법이 유사 중괄호로 구분하는 블럭, 세미콜론으로 줄이 끝남을 알리는 것, 변수 쓰는 법, 연산자 사용법 등 기초적인 문법이 C 문법과 크게 다르지 않다. 호이스팅 같은 것도 C언어의 잔재이다. 무엇보다 다른언어 쓰다온 사람들을 힘들게 하는건 클래스와 메소드가 외관으로 구분이 안된다라는 점이다.</p>
@@ -32,6 +33,27 @@
     <p>짧은 동작들의 경우 절차적 프로그래밍을 해도 잘 돌아가는 것처럼 보이지만 긴 코드를 짜보면 의외로 골치 아프다. 예를 들어 웹 브라우저나 Node.js 서버에서도 JavaScript의 비동기 프로그램 작성시에는 스레드를 분기하여 작업을 분산 처리하거나, 코루틴으로 작업을 대기 시키는 대신 컨티뉴에이션(+타이머)만 이용해 비동기 프로그램을 구현한다. 즉 싱글스레드 위에 시분할만 존재하고 1 프로세스 1 스레드로 작동한다. 스레드 분기와 코루틴 같은 추상화 된 비동기 처리 자원에 익숙한 프로그래머들이라면 이러한 방식으로 인하여 꽤 고생할 수 있다. 특히 람다식이 여러 번 중첩되는 고차 함수는 그야말로 아스트랄의 극치. 정작 Java는 람다식을 8버전에서야 지원한다... 게다가 호이스팅이라는, 특정 조건 하에서 선언하는 순서와는 다르게 변수 및 함수를 할당하는 특성이 있다. 이를 방지하기 위해서 const나 let를 주로 쓴다. 보통 불변성이 있는 const를 더 사용하는 편.</p>
 
     <p>다만 위에서 언급된 코루틴은 ECMAScript 6, 즉 2015년도 표준에 이미 포함되어 있는지 오래다. 보통 코루틴이 아닌 Promise라고 부르다 보니 둘이 같은 것이라는걸 모르는 사람도 있는 편. 또한 병렬적 실행도 Promise.all로 동시 실행이 가능하게 되었다.</p>
-    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" width="100%">
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <p>
+      <div id="disqus_thread"></div>
+      <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://web1-rgdmtrwwry.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
   </body>
 </html>
